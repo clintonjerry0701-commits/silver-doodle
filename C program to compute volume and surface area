@@ -1,0 +1,33 @@
+/*
+Name:Clinton Jerry
+Reg No:CT100/G/26286/25
+Description:Program to compute volume
+volume=pie*raduis*radius*height
+*/
+
+#include <stdio.h>
+
+int main () {
+	//variable declarstio
+	 float pie, radius, height, volume, surface_area;
+	 
+	 //prompt the user to enter radius 
+	  printf("\n Enter radius:");
+	  scanf("%f",&radius);
+	
+	  //prompt the user to enter height 
+	   printf("\n Enter height:");
+	   scanf("%f",&height);
+	   
+	   pie=3.142;
+	    
+	    //compute volume and surface_area
+	    volume=pie*radius*radius*height;
+	    surface_area=(2*pie*radius*radius)+(2*pie*radius*height);
+	    
+	    //display volume and surface_area
+	    printf("\n volume is %.2f",volume);
+	    printf("\n surface_area is %.2f",surface_area);
+	    
+	    return 0;
+}
