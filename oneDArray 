@@ -1,0 +1,37 @@
+/*
+Name:Clinton Jerry
+Reg:CT100/G/26286/25
+Des:One dimension array 
+*/
+#include <stdio.h>
+
+void oneDArray() {
+    float revenue[7]; // Array to store 7 days of revenue
+    float total = 0, average;
+    
+    printf("=== 1D Array - Weekly Revenue Tracker ===\n\n");
+    printf("Enter daily revenue for 7 days:\n");
+    
+    // Input revenue for each day
+    for(int i = 0; i < 7; i++) {
+        printf("Day %d revenue: $", i + 1);
+        scanf("%f", &revenue[i]);
+        total += revenue[i];
+    }
+    
+    // Calculate average
+    average = total / 7;
+    
+    // Display results
+    printf("\n--- Weekly Revenue Report ---\n");
+    for(int i = 0; i < 7; i++) {
+        printf("Day %d: $%.2f\n", i + 1, revenue[i]);
+    }
+    printf("\nTotal Weekly Revenue: $%.2f\n", total);
+    printf("Average Daily Revenue: $%.2f\n", average);
+}
+
+int main() {
+    oneDArray();
+    return 0;
+}
